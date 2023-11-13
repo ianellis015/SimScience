@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const calculateBtn = document.getElementById('calculate-btn');
     const resultValue = document.getElementById('resultValue');
 
-    // Define your physics equations and corresponding simulation logic
+    // Physics equations and corresponding simulation logic
     const equations = {
         equation1: () => {
             // Logic for calculating Force (in Newtons)
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         equation2: () => {
+            // Logic for calculating Velocity/Speed (in meters per second)
             let distance = parseFloat(input1E2.value);
             let time = parseFloat(input2E2.value);
 
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         equation3: () => {
+            // Logic for calculating acceleration (in meters per second squared)
             let velocity = parseFloat(input1E3.value);
             let time = parseFloat(input2E3.value);
 
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         equation4: () => {
+            // Logic for change in velocity (in meters per second)
             let acceleration = parseFloat(input1E4.value);
             let time = parseFloat(input2E4.value);
 
@@ -62,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         equation5: () => {
+            // Logic for calculating change in time (in seconds)
             let velocity = parseFloat(input1E5.value);
             let acceleration = parseFloat(input2E5.value);
 
@@ -72,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 resultValue.textContent = "Result: " + changeInTime.toFixed(2) + "s" 
             }
         }
-        // Add more equations and simulation logic as needed
+        // Add more equations and simulation logic here as needed
     };
 
     // CSS to initially hide the input fields
@@ -102,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
+    // Event listener for the Calculate button to trigger the simulation
     calculateBtn.addEventListener('click', () => {
         const selectedEquation = equationSelect.value;
         equations[selectedEquation]();
