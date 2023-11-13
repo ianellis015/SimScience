@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim Science</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sim Science</h1>
+    <label for="equation-select">Select an Equation:</label>
+    <select id="equation-select">
+        <option value="Selections">Please Select</option>
+        <option value="equation1">F = m × ā</option>
+        <option value="equation2">𝚟 = ∆d ÷ ∆t</option>
+        <option value="equation3">ā = ∆𝚟 ÷ ∆t</option>
+        <option value="equation4">∆𝚟 = ā × ∆t</option>
+        <option value="equation5">∆t = ∆𝚟 ÷ ā</option>
+    </select>
+
+    <div id="simulation-area" class="simulation-container">
+        <div id="equation1-inputs" class="equation-inputs">
+            <label for="input1">Mass (kg):</label><br>
+            <input type="text" id="input1_equation1" name="input1"><br>
+            <label for="input2">Acceleration (m/s²):</label><br>
+            <input type="text" id="input2_equation1" name="input2">
+        </div>
+        
+        <div id="equation2-inputs" class="equation-inputs">
+            <label for="input1">Distance/Displacement (m):</label><br>
+            <input type="text" id="input1_equation2" name="input1"><br>
+            <label for="input2">Time (s):</label><br>
+            <input type="text" id="input2_equation2" name="input2">
+        </div>  
+        
+        <div id="equation3-inputs" class="equation-inputs">
+            <label for="input1">Velocity(m/s):</label><br>
+            <input type="text" id="input1_equation3" name="input1"><br>
+            <label for="input2">Time (s):</label><br>
+            <input type="text" id="input2_equation3" name="input2">
+        </div>
+        
+        <div id="equation4-inputs" class="equation-inputs">
+            <label for="input1">Acceleration (m/s²):</label><br>
+            <input type="text" id="input1_equation4" name="input1"><br>
+            <label for="input2">Time (s):</label><br>
+            <input type="text" id="input2_equation4" name="input2">
+        </div> 
+
+        <div id="equation5-inputs" class="equation-inputs">
+            <label for="input1">Velocity (m/s):</label><br>
+            <input type="text" id="input1_equation5" name="input1"><br>
+            <label for="input2">Acceleration (m/s²):</label><br>
+            <input type="text" id="input2_equation5" name="input2">
+        </div>
+
+        <button id="calculate-btn">Calculate</button>    
+          <div class="result">
+            <p><span id="resultValue"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

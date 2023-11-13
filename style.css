@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Noto Sans Linear B', sans-serif;
+    font-size: 40px;
+    margin: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#simulation-area {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    min-height: 200px;
+}
+
+
+#calculate-btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
